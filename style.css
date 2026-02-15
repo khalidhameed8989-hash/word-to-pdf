@@ -14,7 +14,9 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 #dropArea {
     border: 2px dashed #4e73df;
@@ -39,6 +41,10 @@ button {
 button:active {
     transform: scale(0.95);
 }
+button:disable {
+    background:#999;
+    cursor:not-allowed;
+    opacity:0.7;
 
 #preview {
     border: 1px solid #ccc;
