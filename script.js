@@ -41,10 +41,12 @@ function handleFile(file) {
         mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
         .then(function(result) {
             preview.innerHTML = result.value;
+            
         })
         .catch(function(error) {
             alert("Error reading file");
-        });
+            convertBtn.disabled = false;
+       });
     };
     reader.readAsArrayBuffer(file);
 }
