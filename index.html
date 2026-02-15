@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Word to PDF Tool</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Mammoth -->
+    <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+
+    <!-- jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Word to PDF Converter</h1>
+
+    <!-- Drag & Drop Area -->
+    <div id="dropArea">
+        <p>Drag & Drop Word File Here</p>
+        <p>OR</p>
+        <input type="file" id="fileInput" accept=".docx">
+    </div>
+
+    <button id="convertBtn">Convert to PDF</button>
+
+    <div id="loading" class="hidden">Converting...</div>
+
+    <h3>Preview</h3>
+    <div id="preview"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
